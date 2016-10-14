@@ -1,10 +1,13 @@
 package com.address.domain;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 /**
  * Created by 1004w455 on 2016. 10. 14..
  */
+@Data
 @Entity
 public class Member {
 
