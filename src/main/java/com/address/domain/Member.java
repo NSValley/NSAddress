@@ -1,9 +1,6 @@
 package com.address.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by 1004w455 on 2016. 10. 14..
@@ -13,10 +10,16 @@ public class Member {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false, updatable = false)
     private long id;
 
-    private String name;
-    private String pass;
+    @Column(nullable = false, length = 256)
+    private String password;
+
+    @Column(nullable = false, length = 128)
     private String email;
-    private String use;
+
+    @Column(nullable = false, length = 128)
+    private String name;
+
 }

@@ -6,13 +6,13 @@
 #none: 사용하지 않음
 
 spring:
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create
-    generate-ddl: false
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://1004w455.iptime.org:3306/ns_address?useUnicode=true&charaterEncoding=utf-8
     username: nsvalley
-    password: 비밀번호
+    password: ehdgnsxkdnj
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: create-drop
