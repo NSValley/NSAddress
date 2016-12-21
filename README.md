@@ -25,3 +25,9 @@
   Spring Boot 1.4
   java 8
   Maven, Lombok, JSP
+
+
+## 해볼꺼
+ - 트랜젝션 테스트
+ - delete테스트(oneToMany조인 걸려있을때 삭제 안되는 문제가 있었음)
+ 
